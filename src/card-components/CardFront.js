@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class CardFront extends Component {
+const CardFront = (props) => {
 
-  render() {
     return (
-      <div className="card-front" style={{backgroundImage: `url(${''})`}}>
+      <div className="card-front" style={{backgroundImage: `url(${props.poster})`}}>
       </div>
     )
-  }
 }
+
+export default CardFront;
